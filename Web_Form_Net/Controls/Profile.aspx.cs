@@ -33,6 +33,7 @@ namespace Web_Form_Net.Controlls
             lblGender.Text = ddlGender.SelectedItem.Text;
             lblPhone.Text = tbPhone.Text;
             lblEmail.Text = tbEmail.Text;
+            lblDOB.Text = ddlDOB.SelectedDate;
         }
 
         protected void btnStep3To2_Click(object sender, EventArgs e)

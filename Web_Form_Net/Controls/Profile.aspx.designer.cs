@@ -58,6 +58,15 @@ namespace Web_Form_Net.Controlls {
         protected global::System.Web.UI.WebControls.DropDownList ddlGender;
         
         /// <summary>
+        /// ddlDOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Web_Form_Net.UserControls.CalendarUserControl ddlDOB;
+        
+        /// <summary>
         /// btnStep2 control.
         /// </summary>
         /// <remarks>
@@ -146,6 +155,15 @@ namespace Web_Form_Net.Controlls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblGender;
+        
+        /// <summary>
+        /// lblDOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDOB;
         
         /// <summary>
         /// lblEmail control.

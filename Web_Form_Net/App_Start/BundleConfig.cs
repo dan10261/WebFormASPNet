@@ -12,6 +12,13 @@ namespace Web_Form_Net
         // For more information on Bundling, visit https://go.microsoft.com/fwlink/?LinkID=303951
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new StyleBundle("~/bundles/css/bootstrap").Include(
+                          "~/Content/bootstrap.*"));
+            bundles.Add(new StyleBundle("~/bundles/css/fontawesome").Include(
+                         "~/Content/font-awesome.*"));
+            bundles.Add(new StyleBundle("~/bundles/css/ddu").Include(
+                          "~/Content/HelloWorld.css"));
+
             bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
                             "~/Scripts/WebForms/WebForms.js",
                             "~/Scripts/WebForms/WebUIValidation.js",

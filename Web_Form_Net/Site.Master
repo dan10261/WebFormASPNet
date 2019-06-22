@@ -6,12 +6,13 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~~/bundles/css/fontawesome" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet"/>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
@@ -49,13 +50,13 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                         <li><a runat="server" href="~/HelloWorld">Hello World</a></li>
                         <li><a runat="server" href="~/Controls/Address">Address</a></li>
                         <li><a runat="server" href="~/Controls/FileUpload">Upload Doc</a></li>
                         <li><a runat="server" href="~/Controls/Profile">Profile</a></li>
                           <li><a runat="server" href="~/Controls/StartUpScript.aspx">StartUp Scripts</a></li>
+                         <li><a runat="server" href="~/Account/LogOut.aspx">LogOut</a></li>
                     </ul>
                 </div>
             </div>

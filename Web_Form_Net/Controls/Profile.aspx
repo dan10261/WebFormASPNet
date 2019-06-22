@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Profile.aspx.cs" Inherits="Web_Form_Net.Controlls.Profile" %>
 
+<%@ Register Src="~/UserControls/CalendarUserControl.ascx" TagName="CalendarUserControl" TagPrefix="Cld" %>
+
 <asp:Content ID="ProfileHeader" ContentPlaceHolderID="header" runat="server">
 </asp:Content>
 <asp:Content ID="ProfileContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -32,6 +34,14 @@
                         <asp:ListItem Value="0" Text="Male"></asp:ListItem>
                         <asp:ListItem Value="1" Text="Female"></asp:ListItem>
                     </asp:DropDownList>
+                </div>
+            </div>
+            <div class="row form-group">
+                <%--<div class="col-md-2">
+                    <asp:Label AssociatedControlID="ddlDOB" runat="server" Text="Date of birth"></asp:Label>
+                </div>--%>
+                <div class="col-md-10">
+                    <Cld:CalendarUserControl runat="server" ID="ddlDOB" />
                 </div>
             </div>
             <div class="row form-group">
@@ -77,6 +87,13 @@
                 <div class="col-md-12">
                     Gender:
                     <asp:Label ID="lblGender" runat="server"></asp:Label>
+                </div>
+                <div class="col-md-12"></div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    Date of birth:
+                    <asp:Label ID="lblDOB" runat="server"></asp:Label>
                 </div>
                 <div class="col-md-12"></div>
             </div>
