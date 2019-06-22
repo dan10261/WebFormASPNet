@@ -127,6 +127,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Controls\Address.aspx" />
     <Content Include="Controls\AddressDetail.aspx" />
+    <Content Include="Controls\Calendars.aspx" />
     <Content Include="Controls\Confirm.aspx" />
     <Content Include="Controls\FileUpload.aspx" />
     <Content Include="Account\Login.aspx" />
@@ -326,6 +327,8 @@
     <Content Include="Resources\XML\Cities.xml" />
     <Content Include="Resources\XML\Continents.xml" />
     <Content Include="Resources\XML\Countries.xml" />
+    <Content Include="Resources\XML\Months.xml" />
+    <Content Include="Resources\XML\Years.xml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
@@ -540,6 +543,13 @@
     <Compile Include="Controls\AddressDetail.aspx.designer.cs">
       <DependentUpon>AddressDetail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Calendars.aspx.cs">
+      <DependentUpon>Calendars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Calendars.aspx.designer.cs">
+      <DependentUpon>Calendars.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Confirm.aspx.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -667,16 +677,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>64785</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:64785/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

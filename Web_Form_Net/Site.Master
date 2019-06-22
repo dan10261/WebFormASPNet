@@ -13,6 +13,7 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <webopt:BundleReference runat="server" Path="~~/bundles/css/fontawesome" />
     <link href="~/Content/font-awesome.css" rel="stylesheet"/>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
@@ -57,6 +58,7 @@
                         <li><a runat="server" href="~/Controls/Profile">Profile</a></li>
                           <li><a runat="server" href="~/Controls/StartUpScript.aspx">StartUp Scripts</a></li>
                          <li><a runat="server" href="~/Account/LogOut.aspx">LogOut</a></li>
+                        <li><a runat="server" href="~/Controls/Calendars.aspx">Calendars</a></li>
                     </ul>
                 </div>
             </div>
